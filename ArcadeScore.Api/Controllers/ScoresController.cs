@@ -21,14 +21,21 @@ namespace ArcadeScore.Api.Controllers
 
             var entry = new ScoreEntry
             {
-                Date = dto.Date,
+                Date = DateTime.Now,
                 Score = dto.Score,
                 Player = dto.Player
             };
 
             _repository.Add(entry);
-            return Ok(entry);
+
+            return Ok(new
+            {
+                Date = entry.Date.ToString("dd/MM/yyyy HH:mm:ss"),
+                Score = entry.Score,
+                Player = entry.Player
+            });
         }
+
 
         [HttpGet("ranking")]
         public IActionResult GetRanking()

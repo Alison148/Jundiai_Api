@@ -1,16 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\arcade-score-frontend",
-    "\\arcade-score-frontend\\arcade-score-frontend",
-    "\\arcade-score-frontend\\arcade-score-frontend\\src",
-    "\\arcade-score-frontend\\arcade-score-frontend\\src\\app",
-    "\\arcade-score-frontend\\arcade-score-frontend\\src\\app\\pages",
-    "\\ArcadeScore.Api",
-    "\\ArcadeScore.Api\\ArcadeScore.Api",
-    "\\ArcadeScore.Api\\bin",
-    "\\ArcadeScore.Api\\Controllers"
+    "\\ArcadeScore.Api\\Controllers",
+    "\\ArcadeScore.Api\\Models"
   ],
-  "SelectedNode": "\\arcade-score-frontend\\arcade-score-frontend\\src\\styles.css",
+  "SelectedNode": "\\ArcadeScore.sln",
   "PreviewInSolutionExplorer": false
 }

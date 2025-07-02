@@ -1,0 +1,11 @@
+<h2>🏠 Jogadores</h2>
+
+<ul *ngIf="jogadores.length; else carregando">
+  <li *ngFor="let jogador of jogadores">
+    {{ jogador.nome || jogador.name || jogador }}
+  </li>
+</ul>
+
+<ng-template #carregando>
+  <p>Carregando jogadores...</p>
+</ng-template>

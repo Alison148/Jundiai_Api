@@ -1,0 +1,53 @@
+<div class="container mt-4">
+  <h1 class="mb-3">🏆 Ranking de Jogadores</h1>
+
+  <!-- Botão para adicionar jogador -->
+  <button (click)="adicionarJogador()" class="btn btn-primary mb-4">
+    ➕ Adicionar Jogador
+  </button>
+
+  <!-- Campeão Atual -->
+  <div *ngIf="ranking.length" class="alert alert-success">
+    🏆 <strong>Campeão Atual:</strong>
+    {{ ranking[0].player }} — {{ ranking[0].score }} pontos
+    <em>({{ ranking[0].date | date:'dd/MM/yyyy HH:mm' }})</em>
+  </div>
+
+  <!-- Vice-Campeão -->
+  <div *ngIf="ranking.length > 1" class="alert alert-secondary">
+    🥈 <strong>Vice-Campeão:</strong>
+    {{ ranking[1].player }} — {{ ranking[1].score }} pontos
+    <em>({{ ranking[1].date | date:'dd/MM/yyyy HH:mm' }})</em>
+  </div>
+
+  <!-- Terceiro Colocado -->
+  <div *ngIf="ranking.length > 2" class="alert alert-warning">
+    🥉 <strong>3º Colocado:</strong>
+    {{ ranking[2].player }} — {{ ranking[2].score }} pontos
+    <em>({{ ranking[2].date | date:'dd/MM/yyyy HH:mm' }})</em>
+  </div>
+
+  <!-- Mensagem se ainda não carregou -->
+  <p *ngIf="!ranking.length">Carregando ranking...</p>
+
+  <!-- Lista de jogadores -->
+  <ul *ngIf="ranking.length" class="list-group">
+    <li
+      *ngFor="let jogador of ranking; let i = index"
+      class="list-group-item d-flex justify-content-between align-items-center"
+      [ngClass]="{ 'bg-light': i % 2 === 0 }"
+    >
+      <div>
+        <strong>
+          <i class="fas fa-user"></i>
+          {{ i + 1 }}º {{ jogador.player }}
+          <span *ngIf="i === 0" class="badge bg-warning text-dark">🥇</span>
+          <span *ngIf="i === 1" class="badge bg-secondary">🥈</span>
+          <span *ngIf="i === 2" class="badge bg-warning">🥉</span>
+        </strong>
+        — <i class="fas fa-star text-warning"></i> {{ jogador.score }} pontos
+      </div>
+      <em><i class="fas fa-clock"></i> {{ jogador.date | date:'dd/MM/yyyy HH:mm' }}</em>
+    </li>
+  </ul>
+</div>

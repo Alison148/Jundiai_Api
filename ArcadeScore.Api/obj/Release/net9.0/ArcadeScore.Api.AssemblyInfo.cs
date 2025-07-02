@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArcadeScore.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e95b656ec2e17db5c87474817e261480618b578")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ef3135fd5c6e28e060e9e3b1d73cdb53680fab9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArcadeScore.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArcadeScore.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

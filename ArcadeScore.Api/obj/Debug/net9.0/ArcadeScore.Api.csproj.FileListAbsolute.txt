@@ -72,3 +72,40 @@ C:\Users\amiranda\Downloads\ArcadeScore-Atualizado\ArcadeScore.Api\obj\Debug\net
 C:\Users\amiranda\Downloads\ArcadeScore-Atualizado\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.pdb
 C:\Users\amiranda\Downloads\ArcadeScore-Atualizado\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.genruntimeconfig.cache
 C:\Users\amiranda\Downloads\ArcadeScore-Atualizado\ArcadeScore.Api\obj\Debug\net9.0\ref\ArcadeScore.Api.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\appsettings.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\ArcadeScore.Api.staticwebassets.endpoints.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\ArcadeScore.Api.exe
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\ArcadeScore.Api.deps.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\ArcadeScore.Api.runtimeconfig.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\ArcadeScore.Api.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\ArcadeScore.Api.pdb
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.csproj.AssemblyReference.cache
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.AssemblyInfoInputs.cache
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.AssemblyInfo.cs
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.csproj.CoreCompileInputs.cache
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.sourcelink.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\scopedcss\bundle\ArcadeScore.Api.styles.css
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets\msbuild.ArcadeScore.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets\msbuild.ArcadeScore.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets\msbuild.build.ArcadeScore.Api.props
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.ArcadeScore.Api.props
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.ArcadeScore.Api.props
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeSc.04DB7044.Up2Date
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\refint\ArcadeScore.Api.dll
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.pdb
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ArcadeScore.Api.genruntimeconfig.cache
+C:\Users\amiranda\Downloads\Projeto de API Cijun\ArcadeScore.Api\obj\Debug\net9.0\ref\ArcadeScore.Api.dll

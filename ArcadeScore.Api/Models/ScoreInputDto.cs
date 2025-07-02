@@ -5,8 +5,8 @@ namespace ArcadeScore.Api.Models
 {
     public class ScoreInputDto
     {
-        [Required]
-        public DateTime Date { get; set; }
+        
+  
 
         [Required]
         [Range(0, int.MaxValue, ErrorMessage = "A pontuação deve ser um número não negativo.")]
@@ -17,3 +17,4 @@ namespace ArcadeScore.Api.Models
         public string Player { get; set; }
     }
 }
+

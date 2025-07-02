@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "ArcadeScore.Api.Controllers.ScoresController",
+    "Method": "RegisterScore",
+    "RelativePath": "api/Scores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ArcadeScore.Api.Models.ScoreInputDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArcadeScore.Api.Controllers.ScoresController",
+    "Method": "GetPlayerStats",
+    "RelativePath": "api/Scores/player/{player}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "player",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArcadeScore.Api.Controllers.ScoresController",
+    "Method": "GetRanking",
+    "RelativePath": "api/Scores/ranking",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
