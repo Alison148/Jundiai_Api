@@ -1,53 +1,83 @@
-<div class="container mt-4">
-  <h1 class="mb-3">🏆 Ranking de Jogadores</h1>
+<div class="container-fluid py-5">
+  <h1 class="mb-5 text-center fw-bold text-primary display-5">🏆 Ranking de Jogadores</h1>
 
   <!-- Botão para adicionar jogador -->
-  <button (click)="adicionarJogador()" class="btn btn-primary mb-4">
-    ➕ Adicionar Jogador
-  </button>
-
-  <!-- Campeão Atual -->
-  <div *ngIf="ranking.length" class="alert alert-success">
-    🏆 <strong>Campeão Atual:</strong>
-    {{ ranking[0].player }} — {{ ranking[0].score }} pontos
-    <em>({{ ranking[0].date | date:'dd/MM/yyyy HH:mm' }})</em>
+  <div class="text-center mb-5">
+    <button (click)="adicionarJogador()" class="btn btn-success btn-lg px-4 shadow">
+      <i class="fas fa-plus-circle me-2"></i> Adicionar Jogador
+    </button>
   </div>
 
-  <!-- Vice-Campeão -->
-  <div *ngIf="ranking.length > 1" class="alert alert-secondary">
-    🥈 <strong>Vice-Campeão:</strong>
-    {{ ranking[1].player }} — {{ ranking[1].score }} pontos
-    <em>({{ ranking[1].date | date:'dd/MM/yyyy HH:mm' }})</em>
-  </div>
-
-  <!-- Terceiro Colocado -->
-  <div *ngIf="ranking.length > 2" class="alert alert-warning">
-    🥉 <strong>3º Colocado:</strong>
-    {{ ranking[2].player }} — {{ ranking[2].score }} pontos
-    <em>({{ ranking[2].date | date:'dd/MM/yyyy HH:mm' }})</em>
-  </div>
-
-  <!-- Mensagem se ainda não carregou -->
-  <p *ngIf="!ranking.length">Carregando ranking...</p>
-
-  <!-- Lista de jogadores -->
-  <ul *ngIf="ranking.length" class="list-group">
-    <li
-      *ngFor="let jogador of ranking; let i = index"
-      class="list-group-item d-flex justify-content-between align-items-center"
-      [ngClass]="{ 'bg-light': i % 2 === 0 }"
-    >
-      <div>
-        <strong>
-          <i class="fas fa-user"></i>
-          {{ i + 1 }}º {{ jogador.player }}
-          <span *ngIf="i === 0" class="badge bg-warning text-dark">🥇</span>
-          <span *ngIf="i === 1" class="badge bg-secondary">🥈</span>
-          <span *ngIf="i === 2" class="badge bg-warning">🥉</span>
-        </strong>
-        — <i class="fas fa-star text-warning"></i> {{ jogador.score }} pontos
+  <!-- Cards do Pódio -->
+  <div class="row justify-content-center g-4 mb-5" *ngIf="ranking.length">
+    <div class="col-lg-3 col-md-4" *ngIf="ranking[0]">
+      <div class="card border-0 shadow h-100 text-center bg-gradient bg-success bg-opacity-10">
+        <div class="card-header bg-success text-white fw-bold">🏆 Campeão</div>
+        <div class="card-body">
+          <h4 class="card-title text-success">{{ ranking[0].player }}</h4>
+          <p class="card-text fs-5">{{ ranking[0].score }} pontos</p>
+          <small class="text-muted"><i class="fas fa-clock"></i> {{ ranking[0].date | date:'dd/MM/yyyy HH:mm' }}</small>
+        </div>
       </div>
-      <em><i class="fas fa-clock"></i> {{ jogador.date | date:'dd/MM/yyyy HH:mm' }}</em>
-    </li>
-  </ul>
+    </div>
+
+    <div class="col-lg-3 col-md-4" *ngIf="ranking[1]">
+      <div class="card border-0 shadow h-100 text-center bg-gradient bg-secondary bg-opacity-10">
+        <div class="card-header bg-secondary text-white fw-bold">🥈 Vice</div>
+        <div class="card-body">
+          <h4 class="card-title text-secondary">{{ ranking[1].player }}</h4>
+          <p class="card-text fs-5">{{ ranking[1].score }} pontos</p>
+          <small class="text-muted"><i class="fas fa-clock"></i> {{ ranking[1].date | date:'dd/MM/yyyy HH:mm' }}</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4" *ngIf="ranking[2]">
+      <div class="card border-0 shadow h-100 text-center bg-gradient bg-warning bg-opacity-25">
+        <div class="card-header bg-warning text-dark fw-bold">🥉 3º Lugar</div>
+        <div class="card-body">
+          <h4 class="card-title text-warning">{{ ranking[2].player }}</h4>
+          <p class="card-text fs-5">{{ ranking[2].score }} pontos</p>
+          <small class="text-muted"><i class="fas fa-clock"></i> {{ ranking[2].date | date:'dd/MM/yyyy HH:mm' }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Lista Geral -->
+<div class="table-responsive" *ngIf="ranking.length">
+  <table class="table table-striped table-hover table-bordered shadow-sm align-middle">
+    <thead class="table-dark text-center">
+      <tr>
+        <th>#</th>
+        <th>Jogador</th>
+        <th>Pontos</th>
+        <th>Data</th>
+        <th>Premiação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let jogador of ranking; let i = index">
+        <td class="text-center fw-bold">{{ i + 1 }}</td>
+        <td>
+          <i class="fas fa-user me-2"></i>
+          {{ jogador.player }}
+        </td>
+        <td class="text-center">
+          <i class="fas fa-star text-warning me-1"></i> {{ jogador.score }}
+        </td>
+        <td class="text-center">
+          <i class="fas fa-clock me-1"></i> {{ jogador.date | date:'dd/MM/yyyy HH:mm' }}
+        </td>
+        <td class="text-center fw-semibold text-success">
+  <span *ngIf="i === 0"> R$ 1.000.000,00 🥇</span>
+  <span *ngIf="i === 1"> R$ 10.000,00 🥈</span>
+  <span *ngIf="i === 2"> R$ 1.000,00 🥉</span>
+  <span *ngIf="i > 2">R$ 200,00</span>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+  
+  
