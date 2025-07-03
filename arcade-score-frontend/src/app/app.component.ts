@@ -117,10 +117,13 @@ export class AppComponent implements OnInit {
             <h2>🏆 CAMPEÃO DO RANKING</h2>
             <p class="premio">Premiação: <strong>R$ 1.000.000,00</strong></p>
             <p class="data">Emitido em: ${dataFormatada}</p>
-          </div>
-        </body>
-      </html>
-    `;
+             </p>
+        <br><br>
+        <p>Assinatura ________________________</p>
+      </div>
+    </body>
+  </html>
+  `;
 
     const janela = window.open('', '_blank');
     if (janela) {
