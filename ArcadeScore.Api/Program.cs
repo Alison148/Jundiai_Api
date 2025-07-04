@@ -13,6 +13,7 @@ builder.Services.AddCors(options =>
         policy
           .WithOrigins("http://localhost:4200")   // URL do seu front
           .AllowAnyHeader()
+          .AllowAnyOrigin()
           .AllowAnyMethod();
     });
 });
